@@ -11,7 +11,6 @@ type User struct {
 	ID    uint   `gorm:"primaryKey"`
 	Name  string `gorm:"size:100"`
 	Email string `gorm:"unique;not null"`
-	Age   int    `gorm:"default:3"`
 }
 
 func InitDB() {
